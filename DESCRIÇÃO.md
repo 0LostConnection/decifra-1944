@@ -3,7 +3,7 @@
 > [!NOTE]  
 >
 > 1. Conversão do arquivo em PDF para Markdown feita parcialmente por IA e corrigida manualmente.
-> 2. Algumas partes foram modificadas para a melhor leitura e entendimento.
+> 2. Algumas partes foram modificadas para melhor leitura e entendimento.
 
 ## Trabalho em Grupo N1
 
