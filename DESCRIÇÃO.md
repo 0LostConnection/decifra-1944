@@ -49,6 +49,7 @@ O ano é 1944 e o Brasil está na Segunda Guerra Mundial. Você está em uma equ
 Para sua sorte, a equipe de inteligência conseguiu relacionar o código recebido conforme tabela *ASCII*. Contudo, percebeu-se que, além da cifra, alguns caracteres não eram válidos e precisavam ser ignorados. Uma pessoa da equipe de inteligência conseguiu relacionar a posição desses valores com a seguinte função:
 
 $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}+a_{7}x^{7}$$
+
 Em que:
 
 - $a_{0}=186,752$
