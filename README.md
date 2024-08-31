@@ -6,6 +6,6 @@ Este repositório contém o trabalho em grupo N1 da disciplina de Algoritmos e P
 
 ## Integrantes do Grupo
 
-- Gabriel Kauê Rodrigues Tavares
-- Geovane Saraiva Da Silva
-- Hugo Ferreira Vasconcelos
+- Gabriel Kauê Rodrigues Tavares - <gabriel.kaue@a.ucb.br>
+- Geovane Saraiva Da Silva - <geovane.saraiva@a.ucb.br>
+- Hugo Ferreira Vasconcelos - <hugo.ferreira@a.ucb.br>
