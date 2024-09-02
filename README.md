@@ -10,7 +10,8 @@ Para sua sorte, a equipe de inteligência conseguiu relacionar o código recebid
 
 $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}+a_{7}x^{7}$$
 
-Em que:
+<details>
+<summary>Em que:</summary>
 
 - $a_{0}=186,752$
 - $a_{1}=-148,235$
@@ -22,6 +23,8 @@ Em que:
 - $a_{7}=-4,22038*10^{-7}$
 - $b$ é uma variável que será dada pelo agente da inteligência a cada interceptação.
 - $x$ é a posição atual do caractere, começando por 1.
+
+</details>
 
 ## [Descrição Completa da Atividade](/DESCRIÇÃO.md)
 
