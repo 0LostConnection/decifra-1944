@@ -2,7 +2,7 @@
 
 Este repositório contém o trabalho em grupo N1 da disciplina de Algoritmos e Programação Estruturada. O objetivo do trabalho é desenvolver um artigo acadêmico e um algoritmo para decodificar mensagens interceptadas durante a Segunda Guerra Mundial, utilizando a tabela ASCII e uma função matemática específica.
 
-## 3. Desafio
+## Desafio
 
 O ano é 1944 e o Brasil está na Segunda Guerra Mundial. Você está em uma equipe dos Aliados encarregada de decodificar mensagens do inimigo. O único dispositivo que sua equipe possui é uma antena que consegue captar ondas de rádio. Sua equipe recebe vários sinais na antena mas não consegue entender nada do que se passa.
 
