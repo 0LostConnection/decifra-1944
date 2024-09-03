@@ -91,10 +91,11 @@ Sua tarefa é criar um algoritmo capaz de decifrar mensagens interceptadas. Essa
 
 #### 3.2.3 Exemplos
 
-| Entrada                                                                                                        | Saída                                  |
-|----------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| 1<br>0<br>566F6388732073C66F2076656<br>E6365646F867265732C20766F<br>63C3887320636FBE6E7365677<br>5656D2E002DC6C921B7B87FCF | Vocês são vencedores, vocês conseguem. |
-| 1<br>3<br>5465636E6F336C6F676961206<br>46120496E666F726D6187C66F<br>2E00333333333333333333333<br>3333333333333333333333333 | Tecnologia da Informação.              |
+| Entrada                                                                                                                                                                                                                                             | Saída                                     |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| 1<br>0<br>566F6388732073C66F2076656<br>E6365646F867265732C20766F<br>63C3887320636FBE6E7365677<br>5656D2E002DC6C921B7B87FCF                                                                                                                          | Vocês são vencedores, vocês conseguem.    |
+| 1<br>3<br>5465636E6F336C6F676961206<br>46120496E666F726D6187C66F<br>2E00333333333333333333333<br>3333333333333333333333333                                                                                                                          | Tecnologia da Informação.                 |
+| 2<br>0<br>566F6388732073C66F2076656<br>E6365646F867265732C00566F<br>6388732073C66F2076656E636<br>5646F867265732C00332C2C2C<br>3<br>566F638873C320636F6E73656<br>775656D2E002DC6C921B7B87F<br>CF566F638873C320636F6E736<br>56775656D2E002DC6C921B7B8 | Vocês são vencedores,<br>Vocês conseguem. |
 > [!WARNING]  
 > A string foi separada por que não coube na folha. Nos testes, a string virá em sequência, em uma única linha.
 
