@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/*
+Windows: utilize o comando "chcp 437" para alterar a codificação do Prompt de Comando
+*/
 // Função para converter uma string hexadecimal em uma string ASCII
 void hex_to_ascii(const char *hex_str, char *output) {
     unsigned int stringLength = strlen(hex_str);
