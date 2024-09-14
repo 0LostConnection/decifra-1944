@@ -22,7 +22,7 @@ void hex_to_ascii(const char *hex_str, char *output) {
         https://www.geeksforgeeks.org/convert-hexadecimal-value-string-ascii-value-string/
         */
         char ch = strtol(str, NULL, 16); // Converte a string criada anteriormente para int e já o converte para char
-
+        
         output[outputIndex++] = ch; // Adiciona o char ao index 0 do buffer e acrescenta +1 no index
     }
 
@@ -35,7 +35,7 @@ int main() {
 
     hex_to_ascii(hex_string, ascii_output);
 
-    printf("\nResultado em ASCII:\n%s\n", ascii_output);
+    printf("%s", ascii_output);
 
     return 0;
 }
