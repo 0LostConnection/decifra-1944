@@ -6,7 +6,7 @@ Windows: utilize o comando "chcp 437" para alterar a codificação do Prompt de 
 */
 // Função para converter uma string hexadecimal em uma string ASCII
 void hex_to_ascii(const char *hex_str, char *output) {
-    unsigned int stringLength = strlen(hex_str);
+    unsigned int stringLength = strlen(hex_str); // comentar no artigo, por que essa função descarta tudo depois do \0 (00)
     int outputIndex = 0;
 
     if (stringLength % 2 != 0) {
