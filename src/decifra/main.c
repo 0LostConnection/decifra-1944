@@ -1,3 +1,4 @@
+#include "utils.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,7 +17,14 @@ void hex_to_ascii(const char *hex_str, char *output) {
 
     // Faz um loop a cada 2 caracteres
     for (int i = 0; i < stringLength; i += 2) {
+
         char str[3] = {hex_str[i], hex_str[i + 1], '\0'}; // Cria uma string para armazenar 2 caracteres da string de input, considerando o index
+
+        if (strcmp(str, "00") == 0)
+            break;
+
+        if (calcularPolinomio(i / 2 + 1, 0) == 0)
+            continue;
 
         /*
         Referências:
@@ -24,7 +32,7 @@ void hex_to_ascii(const char *hex_str, char *output) {
         https://www.geeksforgeeks.org/convert-hexadecimal-value-string-ascii-value-string/
         */
         char ch = strtol(str, NULL, 16); // Converte a string criada anteriormente para int e já o converte para char
-        
+
         output[outputIndex++] = ch; // Adiciona o char ao index 0 do buffer e acrescenta +1 no index
     }
 
@@ -33,11 +41,11 @@ void hex_to_ascii(const char *hex_str, char *output) {
 
 int main() {
     const char *hex_string = "566F6388732073C66F2076656E6365646F867265732C20766F63C3887320636FBE6E73656775656D2E002DC6C921B7B87FCF";
-    char ascii_output[100]; // Buffer para armazenar a string convertida
+    char ascii_output[51]; // Buffer para armazenar a string convertida
 
     hex_to_ascii(hex_string, ascii_output);
 
-    printf("%s", ascii_output);
+    printf("%s\n", ascii_output);
 
     return 0;
 }
