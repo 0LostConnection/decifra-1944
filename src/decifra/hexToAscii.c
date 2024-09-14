@@ -4,7 +4,7 @@
 #include <string.h>
 
 // Função para converter uma string hexadecimal em uma string ASCII
-void hex_to_ascii(const char *hex_str, char *output) {
+void hex_to_ascii(const char *hex_str, const int seed, char *output) {
     unsigned int stringLength = strlen(hex_str); // comentar no artigo, por que essa função descarta tudo depois do \0 (00)
     int outputIndex = 0;
 
@@ -21,7 +21,7 @@ void hex_to_ascii(const char *hex_str, char *output) {
         if (strcmp(str, "00") == 0)
             break;
 
-        if (calcularPolinomio(i / 2 + 1, 0) == 0)
+        if (calcularPolinomio(i / 2 + 1, seed) == 0)
             continue;
 
         /*
