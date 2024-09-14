@@ -10,26 +10,80 @@ Para sua sorte, a equipe de inteligência conseguiu relacionar o código recebid
 
 $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}+a_{7}x^{7}$$
 
-<details>
-<summary>Em que:</summary>
+#### [Descrição Completa da Atividade](/DESCRIÇÃO.md)
 
-- $a_{0}=186,752$
-- $a_{1}=-148,235$
-- $a_{2}=34,5049$
-- $a_{3}=-3,5091$
-- $a_{4}=0,183166$
-- $a_{5}=-0,00513554$
-- $a_{6}=0,0000735464$
-- $a_{7}=-4,22038*10^{-7}$
-- $b$ é uma variável que será dada pelo agente da inteligência a cada interceptação.
-- $x$ é a posição atual do caractere, começando por 1.
+## Rodando o Projeto
 
-</details>
+### Windows
 
-## [Descrição Completa da Atividade](/DESCRIÇÃO.md)
+#### Requisitos
+
+* **GCC** instalado e configurado no `PATH`
+* **GIT**
+
+#### Executando
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/0LostConnection/decifra-1944.git
+    ```
+
+2. Execute a Ferramenta de Automatização de Build
+
+    ```bash
+    cd decifra-1944
+
+    # Compila o programa
+    decifra.bat -b
+
+    # Executa o programa
+    decifra.bat -r
+
+    # Limpa arquivos de build
+    decifra.bat -c
+    ```
+
+### Linux
+
+#### Requisitos
+
+* **GCC**
+* [**Cpconv**](https://github.com/michael105/codepage_converter) - Ferramenta para converter a codificação **UTF-8** do terminal para a **CP850**
+* **Make**
+* **GIT**
+
+#### Executando
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/0LostConnection/decifra-1944.git
+    ```
+
+2. Compile o projeto
+
+    ```bash
+    cd decifra-1944
+
+    # Compila o programa
+    make
+
+    # Executa o programa - Não recomendável
+    make run
+
+    # Limpa arquivos de build
+    make clean
+    ```
+
+3. Execute o programa e converta a saída para **CP850**:
+
+    ```bash
+    ./decifra | cpconv utf8 cp850
+    ```
 
 ## Integrantes do Grupo
 
-- Gabriel Kauê Rodrigues Tavares - <gabriel.kaue@a.ucb.br>
-- Geovane Saraiva Da Silva - <geovane.saraiva@a.ucb.br>
-- Hugo Ferreira Vasconcelos - <hugo.ferreira@a.ucb.br>
+* Gabriel Kauê Rodrigues Tavares - <gabriel.kaue@a.ucb.br>
+* Geovane Saraiva Da Silva - <geovane.saraiva@a.ucb.br>
+* Hugo Ferreira Vasconcelos - <hugo.ferreira@a.ucb.br>
