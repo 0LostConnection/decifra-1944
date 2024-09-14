@@ -40,7 +40,7 @@ $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}
     # Executa o programa
     decifra.bat -r
 
-    # Limpa arquivos de build
+    # Limpa os arquivos de build
     decifra.bat -c
     ```
 
@@ -72,7 +72,7 @@ $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}
     # Executa o programa - Não recomendável
     make run
 
-    # Limpa arquivos de build
+    # Limpa os arquivos de build
     make clean
     ```
 
