@@ -1,6 +1,6 @@
 @echo off
 set COMPILER=gcc
-set SOURCE_FILES=%cd%\src\decifra\main.c %cd%\src\decifra\hexToAscii.c %cd%\src\decifra\calcularPolinomio.c
+set SOURCE_FILES=src\decifra\main.c src\decifra\hexToAscii.c src\decifra\calcularPolinomio.c
 set LIBS=-lm
 set EXECUTABLE=decifra.exe
 
