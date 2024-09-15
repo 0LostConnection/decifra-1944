@@ -76,7 +76,7 @@ Sua tarefa é criar um algoritmo capaz de decifrar mensagens interceptadas. Essa
 
 - Decodifique a mensagem e imprima-a no terminal.
 - Utilize o Prompt de Comando do Windows (cmd) para rodar o programa.
-- O terminal deve usar a codificação **CP437** (também conhecida como **OEM 437** ou **DOS Latin US**).
+- O terminal deve usar a codificação ~~**CP437** (também conhecida como **OEM 437** ou **DOS Latin US**)~~ **CP850**.
 
 ### 3.2 Exemplo de caso de teste
 
