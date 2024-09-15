@@ -2,7 +2,7 @@
 #include <math.h>
 
 int calcularPolinomio(int x, int b) {
-    double result = 186.752 
+    double resultado = 186.752 
              + (-148.235 + b) * x 
              + 34.5049 * pow(x, 2) 
              + (-3.5091) * pow(x, 3) 
@@ -11,5 +11,5 @@ int calcularPolinomio(int x, int b) {
              + 0.0000735464 * pow(x, 6) 
              + (-4.22038 * pow(10, -7)) * pow(x, 7);
 
-    return roundl(result);
+    return roundl(resultado);
 }

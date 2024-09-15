@@ -5,16 +5,16 @@
 
 // Função para converter uma string hexadecimal em uma string ASCII
 void hex_to_ascii(const char *hex_str, const int seed, char *output) {
-    unsigned int stringLength = strlen(hex_str); // comentar no artigo, por que essa função descarta tudo depois do \0 (00)
+    unsigned int tamanhoString = strlen(hex_str); // comentar no artigo, por que essa função descarta tudo depois do \0 (00)
     int outputIndex = 0;
 
-    if (stringLength % 2 != 0) {
+    if (tamanhoString % 2 != 0) {
         printf("Erro: String hexadecimal inválida.\n1 Caractere ASCII precisa de dois Hexadecimais!\n");
         return;
     }
 
     // Faz um loop a cada 2 caracteres
-    for (int i = 0; i < stringLength; i += 2) {
+    for (int i = 0; i < tamanhoString; i += 2) {
 
         char str[3] = {hex_str[i], hex_str[i + 1], '\0'}; // Cria uma string para armazenar 2 caracteres da string de input, considerando o index
 

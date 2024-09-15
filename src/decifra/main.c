@@ -46,27 +46,27 @@ int main() {
             ;
 
         // Criar um buffer e ler a string. Caso não seja possível ler, o programa para
-        char hex_string[101];
-        if (fgets(hex_string, sizeof(hex_string), arquivo) == NULL) {
+        char stringHex[101];
+        if (fgets(stringHex, sizeof(stringHex), arquivo) == NULL) {
             printf("Erro: Não foi possível ler a string hexadecimal.\n");
             fclose(arquivo);
             exit(1);
         }
 
-        // printf("String: %s\n", hex_string);
+        // printf("String: %s\n", stringHex);
 
         // Remove o caractere de nova linha e o substitui pelo caractere nulo
-        hex_string[strcspn(hex_string, "\n")] = 0;
+        stringHex[strcspn(stringHex, "\n")] = 0;
 
         // Criar um buffer para a mensagem
-        char ascii_output[51];
+        char outputAscii[51];
 
         // Converte a string
-        hex_to_ascii(hex_string, semente, ascii_output);
+        hex_to_ascii(stringHex, semente, outputAscii);
 
         // Imprime a mensagem convertida
-        printf("%s\n", ascii_output);
-        // printf("Mensagem %d: %s\n\n", i + 1, ascii_output);
+        printf("%s\n", outputAscii);
+        // printf("Mensagem %d: %s\n\n", i + 1, outputAscii);
     }
 
     fclose(arquivo);
