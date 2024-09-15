@@ -10,7 +10,7 @@ Para sua sorte, a equipe de inteligência conseguiu relacionar o código recebid
 
 $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}+a_{7}x^{7}$$
 
-#### [Descrição Completa da Atividade](/DESCRIÇÃO.md)
+[Descrição Completa da Atividade](/DESCRIÇÃO.md)
 
 ## Rodando o Projeto
 
@@ -18,8 +18,8 @@ $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}
 
 #### Requisitos
 
-* **GCC** instalado e configurado no `PATH`
-* **GIT**
+* GCC instalado e configurado no `PATH`
+* Git
 
 #### Executando
 
@@ -29,29 +29,48 @@ $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}
     git clone https://github.com/0LostConnection/decifra-1944.git
     ```
 
-2. Execute a Ferramenta de Automatização de Build
+2. Crie um arquivo chamado `arquivo.txt` no diretório raiz e o popule com os dados:
+
+    ```txt
+    2
+    0
+    566F6388732073C66F2076656E6365646F867265732C00566F6388732073C66F2076656E6365646F867265732C00332C2C2C
+    3
+    566F638873C320636F6E73656775656D2E002DC6C921B7B87FCF566F638873C320636F6E73656775656D2E002DC6C921B7B8
+    ```
+
+3. Execute a Ferramenta de Automatização de Build:
 
     ```bash
     cd decifra-1944
 
     # Compila o programa
-    decifra.bat -b
+    decifra.bat -c
 
+    # Comandos opcionais:
     # Executa o programa
-    decifra.bat -r
+    decifra.bat -e
 
     # Limpa os arquivos de build
-    decifra.bat -c
+    decifra.bat -l
+    ```
+
+4. Execute o programa:
+
+    ```bash
+    decifra.exe
+    # OU
+    decifra.bat -e
     ```
 
 ### Linux
 
 #### Requisitos
 
-* **GCC**
+* GCC
 * [**Cpconv**](https://github.com/michael105/codepage_converter) - Ferramenta para converter a codificação **UTF-8** do terminal para a **CP850**
-* **Make**
-* **GIT**
+* Make
+* Git
 
 #### Executando
 
@@ -61,7 +80,17 @@ $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}
     git clone https://github.com/0LostConnection/decifra-1944.git
     ```
 
-2. Compile o projeto
+2. Crie um arquivo chamado `arquivo.txt` no diretório raiz e o popule com os dados:
+
+    ```txt
+    2
+    0
+    566F6388732073C66F2076656E6365646F867265732C00566F6388732073C66F2076656E6365646F867265732C00332C2C2C
+    3
+    566F638873C320636F6E73656775656D2E002DC6C921B7B87FCF566F638873C320636F6E73656775656D2E002DC6C921B7B8
+    ```
+
+3. Compile o projeto:
 
     ```bash
     cd decifra-1944
@@ -69,6 +98,7 @@ $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}
     # Compila o programa
     make
 
+    # Comandos opcionais:
     # Executa o programa - Não recomendável
     make run
 
@@ -76,10 +106,10 @@ $$f(x,b)=a_{0}+(a_{1}+b)x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5}+a_{6}x^{6}
     make clean
     ```
 
-3. Execute o programa e converta a saída para **CP850**:
+4. Execute o programa e converta a saída para **CP850**:
 
     ```bash
-    ./decifra | cpconv utf8 cp850
+    ./decifra.out | cpconv utf8 cp850
     ```
 
 ## Integrantes do Grupo

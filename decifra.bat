@@ -5,17 +5,19 @@ set LIBS=-lm
 set EXECUTABLE=decifra.exe
 
 :parse_args
-if "%1" == "-c" goto clean
-if "%1" == "-r" goto run
-if "%1" == "-b" goto build
+if "%1" == "-c" goto build
+if "%1" == "-e" goto run
+if "%1" == "-l" goto clean
+if "%1" == "-h" goto help
 goto help
 
 :help
 echo Automatizador de Build - Decifra 1944
 echo Opcoes:
-echo    -c  Limpar arquivos de build
-echo    -r  Executar o programa
-echo    -b  Compilar apenas
+echo    -c  Compilar o projeto
+echo    -e  Executar o programa
+echo    -l  Limpar arquivos de build
+echo    -h  Mensagem de ajuda
 goto end
 
 :clean
