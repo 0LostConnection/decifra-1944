@@ -4,6 +4,12 @@ set SOURCE_FILES=src\decifra\main.c src\decifra\hexToAscii.c src\decifra\calcula
 set LIBS=-lm
 set EXECUTABLE=decifra.exe
 
+where %COMPILER% >nul 2>&1
+if %errorlevel% == 1 (
+    echo O '%COMPILER%' nao esta configurado no PATH!
+    goto end
+)
+
 :parse_args
 if "%1" == "-c" goto build
 if "%1" == "-e" goto run
