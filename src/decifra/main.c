@@ -8,7 +8,7 @@ int main() {
 
     // Verificar a leitura do arquivo
     if (arquivo == NULL) {
-        printf("ERRO: Não foi possível abrir o arquivo. Arquivo inexistente!\n");
+        printf("ERRO: Nao foi possível abrir o arquivo. Arquivo inexistente!\n");
         fclose(arquivo);
         exit(1);
     }
@@ -16,12 +16,12 @@ int main() {
     // Ler e salva o número de conversões. Caso não seja possível ler, o programa para
     int numMensagens;
     if (fscanf(arquivo, "%d", &numMensagens) != 1) {
-        printf("ERRO: Não foi possível ler o número de mensagens!\n");
+        printf("ERRO: Nao foi possivel ler o numero de mensagens!\n");
         fclose(arquivo);
         exit(1);
     }
 
-    // printf("Número de mensagens: %d\n", numMensagens);
+    // printf("Numero de mensagens: %d\n", numMensagens);
 
     // Limpar o buffer para ler a string
     int c;
@@ -34,12 +34,12 @@ int main() {
         // Ler a linha que contém a semente para ser usada na função matemática. Caso não seja possível ler, o programa para
         int semente;
         if (fscanf(arquivo, "%d", &semente) != 1) {
-            printf("ERRO: Não foi possível ler a seed!\n");
+            printf("ERRO: Nao foi possível ler a semente!\n");
             fclose(arquivo);
             exit(1);
         }
 
-        // printf("Seed %d: %d\n", i + 1, semente);
+        // printf("Semente %d: %d\n", i + 1, semente);
 
         // Limpar o buffer para ler a string
         while ((c = fgetc(arquivo)) != '\n' && c != EOF)
@@ -48,7 +48,7 @@ int main() {
         // Criar um buffer e ler a string. Caso não seja possível ler, o programa para
         char stringHex[101];
         if (fgets(stringHex, sizeof(stringHex), arquivo) == NULL) {
-            printf("Erro: Não foi possível ler a string hexadecimal.\n");
+            printf("ERRO: Nao foi possivel ler a string hexadecimal!\n");
             fclose(arquivo);
             exit(1);
         }

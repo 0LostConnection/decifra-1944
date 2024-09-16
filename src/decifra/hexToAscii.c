@@ -9,7 +9,7 @@ void hex_to_ascii(const char *hex_str, const int seed, char *output) {
     int outputIndex = 0;
 
     if (tamanhoString % 2 != 0) {
-        printf("Erro: String hexadecimal inválida.\n1 Caractere ASCII precisa de dois Hexadecimais!\n");
+        printf("ERRO: String hexadecimal invalida.\n1 Caractere ASCII precisa de dois Hexadecimais!\n");
         return;
     }
 
