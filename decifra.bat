@@ -4,6 +4,10 @@ set SOURCE_FILES=src\decifra\main.c src\decifra\hexToAscii.c src\decifra\calcula
 set LIBS=-lm
 set EXECUTABLE=decifra.exe
 
+if not exist build (
+    mkdir build
+)
+
 where %COMPILER% >nul 2>&1
 if %errorlevel% == 1 (
     echo O '%COMPILER%' nao esta configurado no PATH!
@@ -27,32 +31,32 @@ echo    -h  Mensagem de ajuda
 goto end
 
 :clean
-if not exist %EXECUTABLE% (
-    echo Executavel nao encontrado!
+if not exist build (
+    echo Pasta build nao encontrada!
     goto end
 )
-del /q %EXECUTABLE%
+del /q build\*
 echo Limpo!
 goto end
 
 :build
-%COMPILER% %SOURCE_FILES% %LIBS% -o %EXECUTABLE%
+%COMPILER% %SOURCE_FILES% %LIBS% -o build\%EXECUTABLE%
 echo Compilacao Completa!
 goto end
 
 :build-run
-%COMPILER% %SOURCE_FILES% %LIBS% -o %EXECUTABLE%
+%COMPILER% %SOURCE_FILES% %LIBS% -o build\%EXECUTABLE%
 echo Compilacao Completa!
 echo.
 %EXECUTABLE%
 goto end
 
 :run
-if not exist %EXECUTABLE% (
+if not exist build\%EXECUTABLE% (
     echo Executavel nao encontrado! Compilando...
     goto build-run
 )
-%EXECUTABLE%
+build\%EXECUTABLE%
 goto end
 
 :end
