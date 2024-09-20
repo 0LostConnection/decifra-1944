@@ -51,6 +51,7 @@ goto end
 :limits
 if not exist build\%LIMITS_EXECUTABLE% (
     echo Executavel nao encontrado! Compilando...
+    echo.
     %COMPILER% %LIMITS_FILE% -o build\%LIMITS_EXECUTABLE%
 )
 if not exist build\%LIMITS_EXECUTABLE% (
@@ -62,6 +63,7 @@ goto end
 :overflow
 if not exist build\%OVERFLOW_EXECUTABLE% (
     echo Executavel nao encontrado! Compilando...
+    echo.
     %COMPILER% %OVERFLOW_FILE% -o build\%OVERFLOW_EXECUTABLE%
 )
 if not exist build\%OVERFLOW_EXECUTABLE% (
