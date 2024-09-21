@@ -48,7 +48,7 @@ goto end
 %COMPILER% %SOURCE_FILES% %LIBS% -o build\%EXECUTABLE%
 echo Compilacao Completa!
 echo.
-%EXECUTABLE%
+build\%EXECUTABLE%
 goto end
 
 :run
