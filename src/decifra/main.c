@@ -59,14 +59,14 @@ int main() {
         stringHex[strcspn(stringHex, "\n")] = 0;
 
         // Criar um buffer para a mensagem
-        char outputAscii[51];
+        char saidaAscii[51];
 
         // Converte a string
-        hex_to_ascii(stringHex, semente, outputAscii);
+        hexToAscii(stringHex, semente, saidaAscii);
 
         // Imprime a mensagem convertida
-        printf("%s\n", outputAscii);
-        // printf("Mensagem %d: %s\n\n", i + 1, outputAscii);
+        printf("%s\n", saidaAscii);
+        // printf("Mensagem %d: %s\n\n", i + 1, saidaAscii);
     }
 
     fclose(arquivo);
