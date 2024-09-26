@@ -5,7 +5,7 @@
 
 // Função para converter uma string hexadecimal em uma string ASCII
 void hexToAscii(const char *stringHex, const int semente, char *bufferSaida) {
-    unsigned int tamanhoString = strlen(stringHex); // comentar no artigo, por que essa função descarta tudo depois do \0 (00)
+    unsigned int tamanhoString = strlen(stringHex);
     int bufferSaidaIndex = 0;
 
     if (tamanhoString % 2 != 0) {
